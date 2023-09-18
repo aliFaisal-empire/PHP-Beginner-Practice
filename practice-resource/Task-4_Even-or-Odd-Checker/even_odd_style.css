@@ -1,0 +1,70 @@
+:root{
+    --primary-box-shedow: 0 0 10px rgba(0,0,0,0.2);
+    --primary-font-family: Arial, sans-serif;
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    font-family: var(--primary-font-family);
+
+}
+
+.af-container{
+    justify-content: center;
+    padding: 0px 100px;
+    width: 100%;
+}
+
+.af-secRow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.af-container-box{
+    flex-basis: 45%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: var(--primary-box-shedow);
+}
+.box-title{
+    font-family: var(--primary-font-family);
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 0.1em;
+    text-transform: uppercase;
+    margin: 20px 0px;
+    padding: 10px 0px;
+}
+
+input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: var(--primary-font-family);
+    font-size: 14px;
+}
+
+input[type="submit"]{
+    background-color: #4a32b6;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+}
