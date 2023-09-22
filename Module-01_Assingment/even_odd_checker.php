@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRACTICE-RESUOUCE: EVEN OR ODD NUMBER CHECHER IN FOUR WAY</title>
     <style>
-        <?php include 'even_odd_style.css' ?>
+        <?php include 'css/even_odd_style.css' ?>
     </style>
 </head>
 
