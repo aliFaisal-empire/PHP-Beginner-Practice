@@ -20,19 +20,15 @@
     width: 100%;
 }
 
-.af-sec-row{
-    display: flex;
-    justify-content: space-between;
-}
-
-.af-box{
-    flex-basis: 45%;
+.af-form-box{
+    width: 50%;
     margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: var(--primary-box-shedow);
 }
+
 .box-title{
     font-family: var(--primary-font-family);
     font-size: 25px;

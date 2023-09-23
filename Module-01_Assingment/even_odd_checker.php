@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PRACTICE-RESUOUCE: EVEN OR ODD NUMBER CHECHER IN FOUR WAY</title>
+    <title>Even or Odd Checker</title>
     <style>
         <?php include 'css/even_odd_style.css' ?>
     </style>
@@ -30,34 +30,30 @@ Display a message indicating whether the number is even or odd.
     <div class="af-container">
 
         <!-- SECTION-1-START -->
-        <div class="af-secRow">
-            <div class="af-container-box">
+        <div class="af-sec-row">
 
-                <!-- Above PRACTICE-RESUOUCE requierment We stat our jurney from input data form. -->
-
-                <div class="form-box">
+            <div class="af-box">
+                <div class="form-box-1">
                     <h1 class="box-title">Even Or Odd Number Checher</h1>
                     <form method="post" action="">
-                        <input type="number" name=inputNumber1 placeholder="Enter Any Number">
+                        <input type="number" name="inputNumber1" placeholder="Enter Any Number">
                         <input type="submit" name="result1" value="Checker">
                     </form>
-                </div>
 
-                <div class="form-result-box">
                     <?php
+                    
 
-                    //EVEN-ODD CHECKER FIRST WAY
-
-                    // TODO: Use php $_SERVER super-veriable.
+                    //Even-Odd Checker Way-1: if the form is submitted
                     
                     if (isset($_POST['result1'])) {
+                        
+                        // Get user input values
                         $NUMBER = $_POST['inputNumber1'];
                         $RESULT = $_POST['result1'];
                         $remainder = $NUMBER % 2;
 
-                        //TODO: Use php if/else statement.
-                    
-
+                        //TODO: Use if/else statement.
+                        
                         if ($RESULT = ($remainder == 0)) {
                             echo "{$NUMBER} is Even Number";
                         } else {
@@ -67,129 +63,111 @@ Display a message indicating whether the number is even or odd.
                     ?>
 
                 </div>
-
             </div>
-            <div class="af-container-box">
 
-                <!-- Above PRACTICE-RESUOUCE requierment We stat our jurney from input data form. -->
-
-                <div class="form-box">
+            <div class="af-box">
+                <div class="form-box-2">
                     <h1 class="box-title">Even Or Odd Number Checher</h1>
                     <form method="post" action="">
-                        <input type="number" name=inputNumber2 placeholder="Enter Any Number">
+                        <input type="number" name="inputNumber2" placeholder="Enter Any Number">
                         <input type="submit" name="result2" value="Checker">
                     </form>
-                </div>
-
-                <div class="form-result-box">
                     <?php
 
-                    //EVEN-ODD CHECKER SECEND WAY
-
-                    // TODO: Use php $_SERVER super-veriable.
+                    //Even-Odd Checker Way-2: if the form is submitted
                     
                     if (isset($_POST['result2'])) {
+                        
+                        // Get user input values
                         $NUMBER = $_POST['inputNumber2'];
                         $RESULT = $_POST['result2'];
                         $remainder = $NUMBER % 2;
 
-                        //TODO: Use php if/else statement.
-                    
-
-                        if ($RESULT = ($remainder == 0)) {
-                            echo "{$NUMBER} is Even Number";
-                        } else {
-                            echo "{$NUMBER} is ODD Number";
-                        }
+                        //TODO: Use Ternary Operator.
+                        
+                        $RESULT = ($remainder == 0) ? "{$NUMBER} is Even Number" : "{$NUMBER} is Odd Number";
+                        echo $RESULT;
                     }
                     ?>
-
                 </div>
-
             </div>
+
         </div>
 
         <!-- SECTION-1-CLOSING/ -->
 
         <!-- SECTION-2-START -->
-
-        <div class="af-secRow">
-            <div class="af-container-box">
-
-                <!-- Above PRACTICE-RESUOUCE requierment We stat our jurney from input data form. -->
-
-                <div class="form-box">
+        <div class="af-sec-row">
+            
+            <div class="af-box">
+                <div class="form-box-1">
                     <h1 class="box-title">Even Or Odd Number Checher</h1>
                     <form method="post" action="">
-                        <input type="number" name=inputNumber3 placeholder="Enter Any Number">
+                        <input type="number" name="inputNumber3" placeholder="Enter Any Number">
                         <input type="submit" name="result3" value="Checker">
                     </form>
-                </div>
 
-                <div class="form-result-box">
                     <?php
-
-                    //EVEN-ODD CHECKER THIRD WAY
-
-                    // TODO: Use php $_SERVER super-veriable.
+                    
+                   //Even-Odd Checker Way-3: if the form is submitted
                     
                     if (isset($_POST['result3'])) {
+
+                        // Get user input values
                         $NUMBER = $_POST['inputNumber3'];
                         $RESULT = $_POST['result3'];
                         $remainder = $NUMBER % 2;
 
-                        //TODO: Use php if/else statement.
-                    
+                        //TODO: Use match statement.
 
-                        if ($RESULT = ($remainder == 0)) {
-                            echo "{$NUMBER} is Even Number";
-                        } else {
-                            echo "{$NUMBER} is ODD Number";
-                        }
+                        $RESULT = match ($remainder) {
+                            0 => "Even",
+                            1 => "Odd"
+                        };
+                        echo "{$NUMBER} is {$RESULT}";
                     }
                     ?>
 
                 </div>
-
             </div>
-            <div class="af-container-box">
 
-                <!-- Above PRACTICE-RESUOUCE requierment We stat our jurney from input data form. -->
-
-                <div class="form-box">
+            <div class="af-box">
+                <div class="form-box-2">
                     <h1 class="box-title">Even Or Odd Number Checher</h1>
                     <form method="post" action="">
-                        <input type="number" name="inputNumber4" placeholder="Enter Any Number">
+                        <input type="number" name=inputNumber4 placeholder="Enter Any Number">
                         <input type="submit" name="result4" value="Checker">
                     </form>
-                </div>
-
-                <div class="form-result-box">
                     <?php
 
-                    //EVEN-ODD CHECKER FOURTH WAY
-
-                    // TODO: Use php $_SERVER super-veriable.
+                    //Even-Odd Checker Way-4: if the form is submitted
                     
                     if (isset($_POST['result4'])) {
+
+                        // Get user input values
                         $NUMBER = $_POST['inputNumber4'];
                         $RESULT = $_POST['result4'];
                         $remainder = $NUMBER % 2;
 
-                        //TODO: Use php if/else statement.
-                    
+                        //TODO: Use Switch statement
 
-                        if ($RESULT = ($remainder == 0)) {
-                            echo "{$NUMBER} is Even Number";
-                        } else {
-                            echo "{$NUMBER} is ODD Number";
+                        switch ($remainder) {
+                            case 0:
+                                echo "{$NUMBER} is Even Number";
+                                break;
+
+                            case 1:
+                                echo "{$NUMBER} is Odd Number";
+                                break;
+
+                            default:
+                                echo "Result is Nothing";
                         }
                     }
                     ?>
-
                 </div>
-
             </div>
+
         </div>
 
         <!-- SECTION-2-CLOSING/ -->
