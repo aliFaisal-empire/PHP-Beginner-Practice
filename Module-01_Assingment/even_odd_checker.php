@@ -12,17 +12,16 @@
 
 <body>
 
-    <!-- //PRACTICE-RESUOUCE TOPIC: EVEN OR ODD NUMBER CHECKER SHOWED IN FOUR WAY.
+    <!-- //EVEN OR ODD NUMBER CHECKER
 /*
 Build a PHP program that checks whether a given number is even or odd. 
 Shows a form with an input field where the user can enter a number and a submit button.
-When a user submits the data by clicking on "Submit", 
-the form data is sent to the file specified in the method attribute of the <form> tag. 
-Display a message indicating whether the number is even or odd.
 
-#TODO:
-01. USE PHP GLOBAL VERIABLE $_SERVER FOR USER FONTENT INPUT FORM DATA SEND TO BACKEND SERVER.
-02. USE PHP IF/ESLE STATEMENT AS LOGICAL WORKING PROCEDURE TO GO FINAL DESTINATION.
+When a user submits the data by clicking on "Submit".
+
+the form data is sent to the file specified in the method attribute of the <form> tag. 
+    
+Display a message indicating whether the number is even or odd.
 
 */ -->
 
