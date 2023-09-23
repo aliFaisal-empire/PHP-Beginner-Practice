@@ -7,7 +7,7 @@
     <title>Comparison Tool</title>
 
     <style>
-        <?php include 'css/comparison_tool.css' ?>
+        <?php include 'css/common_style.css' ?>
     </style>
 </head>
 
@@ -25,7 +25,7 @@ Or, declare 2 variable numbers and use the ternary operator to determine the lar
         <div class="af-sec-row">
             <div class="af-form-box">
 
-                <h1 class="box-title">Comparison Tool</h1>
+                <h1 class="af-box-title">Comparison Tool</h1>
 
                 <form method="post" action="">
                     <label for="number1">Enter the first number:</label>
@@ -36,6 +36,8 @@ Or, declare 2 variable numbers and use the ternary operator to determine the lar
 
                     <input type="submit" name="compare" value="Compare">
                 </form>
+
+                <div class="af-output-result">
 
                 <?php
                 // Check if the form is submitted
@@ -51,6 +53,7 @@ Or, declare 2 variable numbers and use the ternary operator to determine the lar
                     echo "<p>The larger number is: $largerNumber</p>";
                 }
                 ?>
+                </div>
 
             </div>
         </div>
